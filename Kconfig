@@ -1,0 +1,82 @@
+# -------------------------------------
+# Copyright 2026 NXP
+# SPDX-License-Identifier: BSD-3-Clause
+# -------------------------------------
+
+menu "SGI PKC - PQC Addon"
+
+config MCUX_COMPONENT_component.sgi_pkc_pqc
+    bool "SGI PKC - PQC Addon"
+	# This is just addon for sgi_pkc component
+    select MCUX_COMPONENT_component.sgi_pkc
+    select MCUX_COMPONENT_component.sgi_pkc_pqc.mldsa
+    select MCUX_COMPONENT_component.sgi_pkc_pqc.mlkem
+	
+	if MCUX_COMPONENT_component.sgi_pkc
+	  choice
+	    prompt "Target device family - Platform Support"
+
+		config MCUX_COMPONENT_component.sgi_pkc_pqc.platform_pqc.mcxa5xx
+            bool "MCXA5"
+			depends on MCUX_HW_DEVICE_MCXA286 || MCUX_HW_DEVICE_MCXA287 || MCUX_HW_DEVICE_MCXA456 || MCUX_HW_DEVICE_MCXA457 || MCUX_HW_DEVICE_MCXA536 || MCUX_HW_DEVICE_MCXA537 || MCUX_HW_DEVICE_MCXA556|| MCUX_HW_DEVICE_MCXA566||  MCUX_HW_DEVICE_MCXA567 || MCUX_HW_DEVICE_MCXA577
+
+		config MCUX_COMPONENT_component.sgi_pkc_pqc.platform_pqc.mcxw7x
+            bool "MCXW"
+			depends on MCUX_HW_DEVICE_KW43B43ZC2 || MCUX_HW_DEVICE_KW43B43ZC3 || MCUX_HW_DEVICE_KW43B43ZC6 || MCUX_HW_DEVICE_KW43B43ZC7 || MCUX_HW_DEVICE_KW43L43Z92 || MCUX_HW_DEVICE_KW43L43Z93 || MCUX_HW_DEVICE_KW43L43Z96 || MCUX_HW_DEVICE_KW43L43Z97 || MCUX_HW_DEVICE_MCXW70AC || MCUX_HW_DEVICE_MCXW70AD || MCUX_HW_DEVICE_MCXW70AA
+	  endchoice
+	endif
+
+    menu "Documentation"
+
+        config MCUX_COMPONENT_component.sgi_pkc_pqc.doc.mcxa5xx
+            bool "MCXA5"
+			depends on MCUX_HW_DEVICE_MCXA286 || MCUX_HW_DEVICE_MCXA287 || MCUX_HW_DEVICE_MCXA456 || MCUX_HW_DEVICE_MCXA457 || MCUX_HW_DEVICE_MCXA536 || MCUX_HW_DEVICE_MCXA537 || MCUX_HW_DEVICE_MCXA556|| MCUX_HW_DEVICE_MCXA566||  MCUX_HW_DEVICE_MCXA567 || MCUX_HW_DEVICE_MCXA577
+
+		config MCUX_COMPONENT_component.sgi_pkc_pqc.doc.mcxw7x
+            bool "MCXW"
+			depends on MCUX_HW_DEVICE_KW43B43ZC2 || MCUX_HW_DEVICE_KW43B43ZC3 || MCUX_HW_DEVICE_KW43B43ZC6 || MCUX_HW_DEVICE_KW43B43ZC7 || MCUX_HW_DEVICE_KW43L43Z92 || MCUX_HW_DEVICE_KW43L43Z93 || MCUX_HW_DEVICE_KW43L43Z96 || MCUX_HW_DEVICE_KW43L43Z97 || MCUX_HW_DEVICE_MCXW70AC || MCUX_HW_DEVICE_MCXW70AD || MCUX_HW_DEVICE_MCXW70AA
+	  
+    endmenu
+
+    menu "Static Libraries"
+
+        config MCUX_COMPONENT_component.sgi_pkc_pqc.static_lib.mcxa5xx
+            bool "MCXA5"
+			depends on MCUX_HW_DEVICE_MCXA286 || MCUX_HW_DEVICE_MCXA287 || MCUX_HW_DEVICE_MCXA456 || MCUX_HW_DEVICE_MCXA457 || MCUX_HW_DEVICE_MCXA536 || MCUX_HW_DEVICE_MCXA537 || MCUX_HW_DEVICE_MCXA556|| MCUX_HW_DEVICE_MCXA566||  MCUX_HW_DEVICE_MCXA567 || MCUX_HW_DEVICE_MCXA577
+		
+		config MCUX_COMPONENT_component.sgi_pkc_pqc.static_lib.mcxw7x
+            bool "MCXW"
+			depends on MCUX_HW_DEVICE_KW43B43ZC2 || MCUX_HW_DEVICE_KW43B43ZC3 || MCUX_HW_DEVICE_KW43B43ZC6 || MCUX_HW_DEVICE_KW43B43ZC7 || MCUX_HW_DEVICE_KW43L43Z92 || MCUX_HW_DEVICE_KW43L43Z93 || MCUX_HW_DEVICE_KW43L43Z96 || MCUX_HW_DEVICE_KW43L43Z97 || MCUX_HW_DEVICE_MCXW70AC || MCUX_HW_DEVICE_MCXW70AD || MCUX_HW_DEVICE_MCXW70AA
+	  
+    endmenu
+
+    menu "Cryptographic Modules"
+        config MCUX_COMPONENT_component.sgi_pkc_pqc.kem
+            bool "Kem"
+            select MCUX_COMPONENT_component.sgi_pkc.xof_modes
+
+        config MCUX_COMPONENT_component.sgi_pkc_pqc.mldsa
+            bool "MlDsa"
+
+        config MCUX_COMPONENT_component.sgi_pkc_pqc.mlkem
+            bool "MlKem"
+            select MCUX_COMPONENT_component.sgi_pkc_pqc.kem
+
+    endmenu
+
+    menu "Examples"
+        config MCUX_COMPONENT_component.sgi_pkc_pqc.examples
+            bool "Examples"
+            select MCUX_COMPONENT_component.sgi_pkc.example
+            select MCUX_COMPONENT_component.sgi_pkc_pqc.examples_mldsa
+            select MCUX_COMPONENT_component.sgi_pkc_pqc.examples_mlkem
+
+        config MCUX_COMPONENT_component.sgi_pkc_pqc.examples_mldsa
+            bool "MlDsa examples"
+            select MCUX_COMPONENT_component.sgi_pkc_pqc.mldsa
+
+        config MCUX_COMPONENT_component.sgi_pkc_pqc.examples_mlkem
+            bool "MlKem examples"
+            select MCUX_COMPONENT_component.sgi_pkc_pqc.mlkem
+    endmenu
+endmenu

@@ -1,0 +1,24 @@
+DCI_SDK (4.1.0) Release Notes
+
+- Release: DCI_SDK_PQC
+- Version: V4.1.0
+- Date:    2026-03-30
+- Compiler: IAR C/C++ Compiler V9.60.2.399 for ARM
+- Code size: 
+    -delivery/mcxa2tsSdk_cosim_release/static_library/mcxa5xx/libclns_pqc.a
+        TEXT   RO RW ZI TOTAL_CONSUMPTION
+        26440 0  0  0  26440
+    -delivery/mcxw7x_release/static_library/mcxw7x/libclns_pqc.a
+        TEXT   RO RW ZI TOTAL_CONSUMPTION
+        26260 0  0  0  26260
+
+
+--- Test Targets: 
+   - CCCS FPGA v2 using W70 (V3 r1789) bitfile
+   - CCCS FPGA v2 using A2TS (V3 r1787) bitfile
+
+--- New Features in V4.1.0:
+    - The initial A2TS/W70 SDK release for PQC Addon
+
+--- Known Issues/Limitations V4.1.0:
+    None
