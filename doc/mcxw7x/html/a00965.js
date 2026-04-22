@@ -1,0 +1,5 @@
+var a00965 =
+[
+    [ "MCUXCLSESSION_DESCRIPTOR_SIZE", "a00965.html#ad0e94a9ac887cecd6bfcaea63626454f", null ],
+    [ "MCUXCLSESSION_DESCRIPTOR_SIZE_IN_WORDS", "a00965.html#a93f27564ed0a28649f23e849dfb94959", null ]
+];
