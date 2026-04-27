@@ -12,13 +12,13 @@ config MCUX_COMPONENT_component.sgi_pkc_pqc
     select MCUX_COMPONENT_component.sgi_pkc_pqc.mldsa
     select MCUX_COMPONENT_component.sgi_pkc_pqc.mlkem
 	
-	if MCUX_COMPONENT_component.sgi_pkc
+	if MCUX_COMPONENT_component.sgi_pkc_pqc
 	  choice
 	    prompt "Target device family - Platform Support"
 
 		config MCUX_COMPONENT_component.sgi_pkc_pqc.platform_pqc.mcxa5xx
             bool "MCXA5"
-			depends on MCUX_HW_DEVICE_MCXA286 || MCUX_HW_DEVICE_MCXA287 || MCUX_HW_DEVICE_MCXA456 || MCUX_HW_DEVICE_MCXA457 || MCUX_HW_DEVICE_MCXA536 || MCUX_HW_DEVICE_MCXA537 || MCUX_HW_DEVICE_MCXA556|| MCUX_HW_DEVICE_MCXA566||  MCUX_HW_DEVICE_MCXA567 || MCUX_HW_DEVICE_MCXA577
+			depends on MCUX_HW_DEVICE_MCXA286 || MCUX_HW_DEVICE_MCXA287 || MCUX_HW_DEVICE_MCXA456 || MCUX_HW_DEVICE_MCXA457 || MCUX_HW_DEVICE_MCXA536 || MCUX_HW_DEVICE_MCXA537 || MCUX_HW_DEVICE_MCXA556 || MCUX_HW_DEVICE_MCXA566 ||  MCUX_HW_DEVICE_MCXA567 || MCUX_HW_DEVICE_MCXA577
 
 		config MCUX_COMPONENT_component.sgi_pkc_pqc.platform_pqc.mcxw7x
             bool "MCXW"
