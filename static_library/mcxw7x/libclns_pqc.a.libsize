@@ -1,4 +1,4 @@
-delivery/mcxw7x_release/static_library/mcxw7x/libclns.a
+delivery/mcxw7x_release/static_library/mcxw7x/libclns_pqc.a
 TEXT RO RW ZI TOTAL_CONSUMPTION
 
-26260	 0	 0	 26260	
+26260	 0	 0	 26260

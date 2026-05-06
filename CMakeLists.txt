@@ -13,7 +13,7 @@ if (CONFIG_MCUX_COMPONENT_component.sgi_pkc_pqc.doc.mcxa5xx)
                 doc/mcxa5xx/html/search/*.*
                 LICENSE.md
                 ReleaseNotes_PQC.txt
-                SBOM-MCU_DCI-DCI_SDK_V4.1.0_PQC.spdx.json
+                SBOM-MCU_DCI-DCI_SDK_V4.2.0_PQC.spdx.json
                 BASE_PATH ${SdkRootDirPath}/components/sgi_pkc/pqc/
     )
 
@@ -30,7 +30,7 @@ if (CONFIG_MCUX_COMPONENT_component.sgi_pkc_pqc.doc.mcxw7x)
                 doc/mcxw7x/html/search/*.*
                 LICENSE.md
                 ReleaseNotes_PQC.txt
-                SBOM-MCU_DCI-DCI_SDK_V4.1.0_PQC.spdx.json
+                SBOM-MCU_DCI-DCI_SDK_V4.2.0_PQC.spdx.json
                 BASE_PATH ${SdkRootDirPath}/components/sgi_pkc/pqc/
     )
 
