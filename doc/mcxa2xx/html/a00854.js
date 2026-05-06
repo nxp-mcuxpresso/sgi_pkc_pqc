@@ -1,5 +1,0 @@
-var a00854 =
-[
-    [ "MCUXCLMEMORY_STATUS_", "a00855.html", "a00855" ],
-    [ "MCUXCLMEMORY_COMPONENT_MASK", "a00854.html#ga08e000e31df077b27186e532e59c90f9", null ]
-];

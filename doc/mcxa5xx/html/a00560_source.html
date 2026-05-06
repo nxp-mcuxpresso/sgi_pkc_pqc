@@ -101,60 +101,80 @@ $(function(){initNavTree('a00560_source.html','',''); });
 <a href="a00560.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*--------------------------------------------------------------------------*/</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">/* Copyright 2020-2025 NXP                                                  */</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">/*                                                                          */</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">/* NXP Confidential and Proprietary. This software is owned or controlled   */</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">/* by NXP and may only be used strictly in accordance with the applicable   */</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/* license terms.  By expressly accepting such terms or by downloading,     */</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">/* installing, activating and/or otherwise using the software, you are      */</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">/* agreeing that you have read, and that you agree to comply with and are   */</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">/* bound by, such license terms.  If you do not agree to be bound by the    */</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">/* applicable license terms, then you may not retain, install, activate or  */</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">/* otherwise use the software.                                              */</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">/*--------------------------------------------------------------------------*/</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#ifndef MCUXCLHASH_TYPES_H_</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#define MCUXCLHASH_TYPES_H_</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;mcuxClConfig.h&gt;</span> <span class="comment">// Exported features flags header</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;mcuxClCore_Platform.h&gt;</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="a01034.html#gacccec0a811d221d2cb0fd8416da271d8">   42</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>mcuxClHash_AlgorithmDescriptor <a class="code hl_typedef" href="a01034.html#gacccec0a811d221d2cb0fd8416da271d8">mcuxClHash_AlgorithmDescriptor_t</a>;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="a01034.html#ga0ffeeb89c76da6470176e7621713e1b2">   50</a></span><span class="keyword">typedef</span> <span class="keyword">const</span> <a class="code hl_typedef" href="a01034.html#gacccec0a811d221d2cb0fd8416da271d8">mcuxClHash_AlgorithmDescriptor_t</a> * <span class="keyword">const</span> <a class="code hl_typedef" href="a01034.html#ga0ffeeb89c76da6470176e7621713e1b2">mcuxClHash_Algo_t</a>;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#if defined(MCUXCL_FEATURE_HASH_C_SHA3_SHAKE)</span><span class="preprocessor"></span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keyword">typedef</span> <a class="code hl_typedef" href="a01034.html#gacccec0a811d221d2cb0fd8416da271d8">mcuxClHash_AlgorithmDescriptor_t</a> * <span class="keyword">const</span> mcuxClHash_Algo_Custom_t;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#endif </span><span class="comment">/* defined(MCUXCL_FEATURE_HASH_C_SHA3_SHAKE) */</span><span class="preprocessor"></span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#ifdef MCUXCL_FEATURE_HASH_SELFTEST</span><span class="preprocessor"></span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="keyword">typedef</span> <span class="keyword">struct </span>mcuxClHash_TestDescriptor mcuxClHash_TestDescriptor_t;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="keyword">typedef</span> <span class="keyword">const</span> mcuxClHash_TestDescriptor_t * <span class="keyword">const</span> mcuxClHash_Test_t;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="preprocessor">#endif </span><span class="comment">/* MCUXCL_FEATURE_HASH_SELFTEST */</span><span class="preprocessor"></span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span></div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="a01034.html#ga90ff7c4f43e59b80eca542e35722124c">   90</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>mcuxClHash_ContextDescriptor <a class="code hl_typedef" href="a01034.html#ga90ff7c4f43e59b80eca542e35722124c">mcuxClHash_ContextDescriptor_t</a>;</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span></div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="a01034.html#ga9a3590c1a721fe0cb8a267015f9204e3">   98</a></span><span class="keyword">typedef</span> <a class="code hl_typedef" href="a01034.html#ga90ff7c4f43e59b80eca542e35722124c">mcuxClHash_ContextDescriptor_t</a> * <a class="code hl_typedef" href="a01034.html#ga9a3590c1a721fe0cb8a267015f9204e3">mcuxClHash_Context_t</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">/* SPDX-License-Identifier: BSD-3-Clause                                    */</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">/*                                                                          */</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/* Redistribution and use in source and binary forms, with or without       */</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">/* modification, are permitted provided that the following conditions are   */</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">/* met:                                                                     */</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">/*                                                                          */</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">/* 1. Redistributions of source code must retain the above copyright        */</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">/*    notice, this list of conditions and the following disclaimer.         */</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">/*                                                                          */</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">/* 2. Redistributions in binary form must reproduce the above copyright     */</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">/*    notice, this list of conditions and the following disclaimer in the   */</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">/*    documentation and/or other materials provided with the distribution.  */</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">/*                                                                          */</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">/* 3. Neither the name of the copyright holder nor the names of its         */</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">/*    contributors may be used to endorse or promote products derived from  */</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">/*    this software without specific prior written permission.              */</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">/*                                                                          */</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">/* THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS  */</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">/* IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED    */</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">/* TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A          */</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">/* PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT       */</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">/* HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,   */</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">/* SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED */</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">/* TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR   */</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">/* PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF   */</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">/* LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING     */</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">/* NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS       */</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">/* SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.             */</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">/*--------------------------------------------------------------------------*/</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#ifndef MCUXCLHASH_TYPES_H_</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#define MCUXCLHASH_TYPES_H_</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#include &lt;mcuxClConfig.h&gt;</span> <span class="comment">// Exported features flags header</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#include &lt;mcuxClCore_Platform.h&gt;</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="a01034.html#gacccec0a811d221d2cb0fd8416da271d8">   62</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>mcuxClHash_AlgorithmDescriptor <a class="code hl_typedef" href="a01034.html#gacccec0a811d221d2cb0fd8416da271d8">mcuxClHash_AlgorithmDescriptor_t</a>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="a01034.html#ga0ffeeb89c76da6470176e7621713e1b2">   70</a></span><span class="keyword">typedef</span> <span class="keyword">const</span> <a class="code hl_typedef" href="a01034.html#gacccec0a811d221d2cb0fd8416da271d8">mcuxClHash_AlgorithmDescriptor_t</a> * <span class="keyword">const</span> <a class="code hl_typedef" href="a01034.html#ga0ffeeb89c76da6470176e7621713e1b2">mcuxClHash_Algo_t</a>;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="preprocessor">#if defined(MCUXCL_FEATURE_HASH_C_SHA3_SHAKE)</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="keyword">typedef</span> <a class="code hl_typedef" href="a01034.html#gacccec0a811d221d2cb0fd8416da271d8">mcuxClHash_AlgorithmDescriptor_t</a> * <span class="keyword">const</span> mcuxClHash_Algo_Custom_t;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="preprocessor">#endif </span><span class="comment">/* defined(MCUXCL_FEATURE_HASH_C_SHA3_SHAKE) */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="preprocessor">#ifdef MCUXCL_FEATURE_HASH_SELFTEST</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="keyword">typedef</span> <span class="keyword">struct </span>mcuxClHash_TestDescriptor mcuxClHash_TestDescriptor_t;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="keyword">typedef</span> <span class="keyword">const</span> mcuxClHash_TestDescriptor_t * <span class="keyword">const</span> mcuxClHash_Test_t;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="preprocessor">#endif </span><span class="comment">/* MCUXCL_FEATURE_HASH_SELFTEST */</span><span class="preprocessor"></span></div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span></div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="a01034.html#gacdfd7a833fcd06684a73c22364e89b7c">  106</a></span><span class="keyword">typedef</span> uint32_t <a class="code hl_typedef" href="a01034.html#gacdfd7a833fcd06684a73c22364e89b7c">mcuxClHash_Status_t</a>;</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span></div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>} <span class="comment">/* extern &quot;C&quot; */</span></div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="preprocessor">#endif </span><span class="comment">/* MCUXCLHASH_TYPES_H_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aa01034_html_ga0ffeeb89c76da6470176e7621713e1b2"><div class="ttname"><a href="a01034.html#ga0ffeeb89c76da6470176e7621713e1b2">mcuxClHash_Algo_t</a></div><div class="ttdeci">const mcuxClHash_AlgorithmDescriptor_t *const mcuxClHash_Algo_t</div><div class="ttdoc">Hash mode/algorithm type.</div><div class="ttdef"><b>Definition</b> mcuxClHash_Types.h:50</div></div>
-<div class="ttc" id="aa01034_html_ga90ff7c4f43e59b80eca542e35722124c"><div class="ttname"><a href="a01034.html#ga90ff7c4f43e59b80eca542e35722124c">mcuxClHash_ContextDescriptor_t</a></div><div class="ttdeci">struct mcuxClHash_ContextDescriptor mcuxClHash_ContextDescriptor_t</div><div class="ttdoc">Hash Context buffer type.</div><div class="ttdef"><b>Definition</b> mcuxClHash_Types.h:90</div></div>
-<div class="ttc" id="aa01034_html_ga9a3590c1a721fe0cb8a267015f9204e3"><div class="ttname"><a href="a01034.html#ga9a3590c1a721fe0cb8a267015f9204e3">mcuxClHash_Context_t</a></div><div class="ttdeci">mcuxClHash_ContextDescriptor_t * mcuxClHash_Context_t</div><div class="ttdoc">Hash Context type.</div><div class="ttdef"><b>Definition</b> mcuxClHash_Types.h:98</div></div>
-<div class="ttc" id="aa01034_html_gacccec0a811d221d2cb0fd8416da271d8"><div class="ttname"><a href="a01034.html#gacccec0a811d221d2cb0fd8416da271d8">mcuxClHash_AlgorithmDescriptor_t</a></div><div class="ttdeci">struct mcuxClHash_AlgorithmDescriptor mcuxClHash_AlgorithmDescriptor_t</div><div class="ttdoc">Hash mode/algorithm descriptor type.</div><div class="ttdef"><b>Definition</b> mcuxClHash_Types.h:42</div></div>
-<div class="ttc" id="aa01034_html_gacdfd7a833fcd06684a73c22364e89b7c"><div class="ttname"><a href="a01034.html#gacdfd7a833fcd06684a73c22364e89b7c">mcuxClHash_Status_t</a></div><div class="ttdeci">uint32_t mcuxClHash_Status_t</div><div class="ttdoc">Hash Status type.</div><div class="ttdef"><b>Definition</b> mcuxClHash_Types.h:106</div></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="a01034.html#ga90ff7c4f43e59b80eca542e35722124c">  110</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>mcuxClHash_ContextDescriptor <a class="code hl_typedef" href="a01034.html#ga90ff7c4f43e59b80eca542e35722124c">mcuxClHash_ContextDescriptor_t</a>;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="a01034.html#ga9a3590c1a721fe0cb8a267015f9204e3">  118</a></span><span class="keyword">typedef</span> <a class="code hl_typedef" href="a01034.html#ga90ff7c4f43e59b80eca542e35722124c">mcuxClHash_ContextDescriptor_t</a> * <a class="code hl_typedef" href="a01034.html#ga9a3590c1a721fe0cb8a267015f9204e3">mcuxClHash_Context_t</a>;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="a01034.html#gacdfd7a833fcd06684a73c22364e89b7c">  126</a></span><span class="keyword">typedef</span> uint32_t <a class="code hl_typedef" href="a01034.html#gacdfd7a833fcd06684a73c22364e89b7c">mcuxClHash_Status_t</a>;</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>} <span class="comment">/* extern &quot;C&quot; */</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="preprocessor">#endif </span><span class="comment">/* MCUXCLHASH_TYPES_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aa01034_html_ga0ffeeb89c76da6470176e7621713e1b2"><div class="ttname"><a href="a01034.html#ga0ffeeb89c76da6470176e7621713e1b2">mcuxClHash_Algo_t</a></div><div class="ttdeci">const mcuxClHash_AlgorithmDescriptor_t *const mcuxClHash_Algo_t</div><div class="ttdoc">Hash mode/algorithm type.</div><div class="ttdef"><b>Definition</b> mcuxClHash_Types.h:70</div></div>
+<div class="ttc" id="aa01034_html_ga90ff7c4f43e59b80eca542e35722124c"><div class="ttname"><a href="a01034.html#ga90ff7c4f43e59b80eca542e35722124c">mcuxClHash_ContextDescriptor_t</a></div><div class="ttdeci">struct mcuxClHash_ContextDescriptor mcuxClHash_ContextDescriptor_t</div><div class="ttdoc">Hash Context buffer type.</div><div class="ttdef"><b>Definition</b> mcuxClHash_Types.h:110</div></div>
+<div class="ttc" id="aa01034_html_ga9a3590c1a721fe0cb8a267015f9204e3"><div class="ttname"><a href="a01034.html#ga9a3590c1a721fe0cb8a267015f9204e3">mcuxClHash_Context_t</a></div><div class="ttdeci">mcuxClHash_ContextDescriptor_t * mcuxClHash_Context_t</div><div class="ttdoc">Hash Context type.</div><div class="ttdef"><b>Definition</b> mcuxClHash_Types.h:118</div></div>
+<div class="ttc" id="aa01034_html_gacccec0a811d221d2cb0fd8416da271d8"><div class="ttname"><a href="a01034.html#gacccec0a811d221d2cb0fd8416da271d8">mcuxClHash_AlgorithmDescriptor_t</a></div><div class="ttdeci">struct mcuxClHash_AlgorithmDescriptor mcuxClHash_AlgorithmDescriptor_t</div><div class="ttdoc">Hash mode/algorithm descriptor type.</div><div class="ttdef"><b>Definition</b> mcuxClHash_Types.h:62</div></div>
+<div class="ttc" id="aa01034_html_gacdfd7a833fcd06684a73c22364e89b7c"><div class="ttname"><a href="a01034.html#gacdfd7a833fcd06684a73c22364e89b7c">mcuxClHash_Status_t</a></div><div class="ttdeci">uint32_t mcuxClHash_Status_t</div><div class="ttdoc">Hash Status type.</div><div class="ttdef"><b>Definition</b> mcuxClHash_Types.h:126</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

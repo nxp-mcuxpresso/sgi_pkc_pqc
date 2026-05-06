@@ -101,75 +101,95 @@ $(function(){initNavTree('a00521_source.html','',''); });
 <a href="a00521.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*--------------------------------------------------------------------------*/</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">/* Copyright 2024-2025 NXP                                                  */</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">/*                                                                          */</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">/* NXP Confidential and Proprietary. This software is owned or controlled   */</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">/* by NXP and may only be used strictly in accordance with the applicable   */</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/* license terms.  By expressly accepting such terms or by downloading,     */</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">/* installing, activating and/or otherwise using the software, you are      */</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">/* agreeing that you have read, and that you agree to comply with and are   */</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">/* bound by, such license terms.  If you do not agree to be bound by the    */</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">/* applicable license terms, then you may not retain, install, activate or  */</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">/* otherwise use the software.                                              */</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">/*--------------------------------------------------------------------------*/</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifndef MCUXCLECC_KEYENCODINGMECHANISMS_H_</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define MCUXCLECC_KEYENCODINGMECHANISMS_H_</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;<a class="code" href="a00620.html">mcuxClKey_Types.h</a>&gt;</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>MCUX_CSSL_ANALYSIS_START_SUPPRESS_DECLARED_BUT_NEVER_REFERENCED(<span class="stringliteral">&quot;Key encoding types are provided as external API for the user/customer, and never used internally.&quot;</span>)</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">/**********************************************************/</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">/* WeierECC key encoding                                  */</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">/**********************************************************/</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>extern const <a class="code hl_typedef" href="a01064.html#ga3f48e0c0ea0cdad730d07929b3a9ac47">mcuxClKey_EncodingDescriptor_t</a> <a class="code hl_variable" href="a00521.html#ac818d4e126f2a1ea88dcaa2302214bd9">mcuxClEcc_EncodingDescriptor_WeierECC_PrivateKey_Plain</a>;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="a00521.html#a3954c538e371697ea74a09dc2d710ba2">   41</a></span><span class="preprocessor">#define mcuxClEcc_Encoding_WeierECC_PrivateKey_Plain &amp;mcuxClEcc_EncodingDescriptor_WeierECC_PrivateKey_Plain</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">extern</span> <span class="keyword">const</span> <a class="code hl_typedef" href="a01064.html#ga3f48e0c0ea0cdad730d07929b3a9ac47">mcuxClKey_EncodingDescriptor_t</a> <a class="code hl_variable" href="a00521.html#a04f6a2f26c6d8c524f38e6d6cbd8d590">mcuxClEcc_EncodingDescriptor_WeierECC_PublicKey_Plain</a>;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="a00521.html#a5824381f3ef97a6c5f1314791c1a2745">   50</a></span><span class="preprocessor">#define mcuxClEcc_Encoding_WeierECC_PublicKey_Plain &amp;mcuxClEcc_EncodingDescriptor_WeierECC_PublicKey_Plain</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#ifdef MCUXCL_FEATURE_ECC_MONTDH</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">/**********************************************************/</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">/* MontDH key encoding                                    */</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">/**********************************************************/</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keyword">extern</span> <span class="keyword">const</span> <a class="code hl_typedef" href="a01064.html#ga3f48e0c0ea0cdad730d07929b3a9ac47">mcuxClKey_EncodingDescriptor_t</a> mcuxClEcc_EncodingDescriptor_MontDH_PrivateKey_Plain;</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#define mcuxClEcc_Encoding_MontDH_PrivateKey_Plain &amp;mcuxClEcc_EncodingDescriptor_MontDH_PrivateKey_Plain</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="keyword">extern</span> <span class="keyword">const</span> <a class="code hl_typedef" href="a01064.html#ga3f48e0c0ea0cdad730d07929b3a9ac47">mcuxClKey_EncodingDescriptor_t</a> mcuxClEcc_EncodingDescriptor_MontDH_PublicKey_Plain;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="preprocessor">#define mcuxClEcc_Encoding_MontDH_PublicKey_Plain &amp;mcuxClEcc_EncodingDescriptor_MontDH_PublicKey_Plain</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="preprocessor">#endif </span><span class="comment">/* MCUXCL_FEATURE_ECC_MONTDH */</span><span class="preprocessor"></span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">/**********************************************************/</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">/* EdDSA key encoding                                    */</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">/**********************************************************/</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span></div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="keyword">extern</span> <span class="keyword">const</span> <a class="code hl_typedef" href="a01064.html#ga3f48e0c0ea0cdad730d07929b3a9ac47">mcuxClKey_EncodingDescriptor_t</a> <a class="code hl_variable" href="a00521.html#a4dbd001e356d11814e77f274acd45734">mcuxClEcc_EncodingDescriptor_EdDSA_PrivateKey_Plain</a>;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="a00521.html#a5733b2352173c5a0d113962db5b6b65b">   87</a></span><span class="preprocessor">#define mcuxClEcc_Encoding_EdDSA_PrivateKey_Plain &amp;mcuxClEcc_EncodingDescriptor_EdDSA_PrivateKey_Plain</span></div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span></div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="keyword">extern</span> <span class="keyword">const</span> <a class="code hl_typedef" href="a01064.html#ga3f48e0c0ea0cdad730d07929b3a9ac47">mcuxClKey_EncodingDescriptor_t</a> <a class="code hl_variable" href="a00521.html#a22e345562245711e8e94e5fa8eed5642">mcuxClEcc_EncodingDescriptor_EdDSA_PublicKey_Plain</a>;</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="a00521.html#a71506d15195b1eb2e58020b2ec4891c6">   96</a></span><span class="preprocessor">#define mcuxClEcc_Encoding_EdDSA_PublicKey_Plain &amp;mcuxClEcc_EncodingDescriptor_EdDSA_PublicKey_Plain</span></div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>MCUX_CSSL_ANALYSIS_STOP_SUPPRESS_DECLARED_BUT_NEVER_REFERENCED()</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>} <span class="comment">/* extern &quot;C&quot; */</span></div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="preprocessor">#endif </span><span class="comment">/* MCUXCLECC_KEYENCODINGMECHANISMS_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">/* SPDX-License-Identifier: BSD-3-Clause                                    */</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">/*                                                                          */</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/* Redistribution and use in source and binary forms, with or without       */</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">/* modification, are permitted provided that the following conditions are   */</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">/* met:                                                                     */</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">/*                                                                          */</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">/* 1. Redistributions of source code must retain the above copyright        */</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">/*    notice, this list of conditions and the following disclaimer.         */</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">/*                                                                          */</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">/* 2. Redistributions in binary form must reproduce the above copyright     */</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">/*    notice, this list of conditions and the following disclaimer in the   */</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">/*    documentation and/or other materials provided with the distribution.  */</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">/*                                                                          */</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">/* 3. Neither the name of the copyright holder nor the names of its         */</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">/*    contributors may be used to endorse or promote products derived from  */</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">/*    this software without specific prior written permission.              */</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">/*                                                                          */</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">/* THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS  */</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">/* IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED    */</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">/* TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A          */</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">/* PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT       */</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">/* HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,   */</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">/* SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED */</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">/* TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR   */</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">/* PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF   */</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">/* LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING     */</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">/* NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS       */</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">/* SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.             */</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">/*--------------------------------------------------------------------------*/</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#ifndef MCUXCLECC_KEYENCODINGMECHANISMS_H_</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#define MCUXCLECC_KEYENCODINGMECHANISMS_H_</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#include &lt;<a class="code" href="a00620.html">mcuxClKey_Types.h</a>&gt;</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>MCUX_CSSL_ANALYSIS_START_SUPPRESS_DECLARED_BUT_NEVER_REFERENCED(<span class="stringliteral">&quot;Key encoding types are provided as external API for the user/customer, and never used internally.&quot;</span>)</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">/**********************************************************/</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">/* WeierECC key encoding                                  */</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">/**********************************************************/</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>extern const <a class="code hl_typedef" href="a01064.html#ga3f48e0c0ea0cdad730d07929b3a9ac47">mcuxClKey_EncodingDescriptor_t</a> <a class="code hl_variable" href="a00521.html#ac818d4e126f2a1ea88dcaa2302214bd9">mcuxClEcc_EncodingDescriptor_WeierECC_PrivateKey_Plain</a>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="a00521.html#a3954c538e371697ea74a09dc2d710ba2">   61</a></span><span class="preprocessor">#define mcuxClEcc_Encoding_WeierECC_PrivateKey_Plain &amp;mcuxClEcc_EncodingDescriptor_WeierECC_PrivateKey_Plain</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keyword">extern</span> <span class="keyword">const</span> <a class="code hl_typedef" href="a01064.html#ga3f48e0c0ea0cdad730d07929b3a9ac47">mcuxClKey_EncodingDescriptor_t</a> <a class="code hl_variable" href="a00521.html#a04f6a2f26c6d8c524f38e6d6cbd8d590">mcuxClEcc_EncodingDescriptor_WeierECC_PublicKey_Plain</a>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="a00521.html#a5824381f3ef97a6c5f1314791c1a2745">   70</a></span><span class="preprocessor">#define mcuxClEcc_Encoding_WeierECC_PublicKey_Plain &amp;mcuxClEcc_EncodingDescriptor_WeierECC_PublicKey_Plain</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="preprocessor">#ifdef MCUXCL_FEATURE_ECC_MONTDH</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">/**********************************************************/</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">/* MontDH key encoding                                    */</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">/**********************************************************/</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="keyword">extern</span> <span class="keyword">const</span> <a class="code hl_typedef" href="a01064.html#ga3f48e0c0ea0cdad730d07929b3a9ac47">mcuxClKey_EncodingDescriptor_t</a> mcuxClEcc_EncodingDescriptor_MontDH_PrivateKey_Plain;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="preprocessor">#define mcuxClEcc_Encoding_MontDH_PrivateKey_Plain &amp;mcuxClEcc_EncodingDescriptor_MontDH_PrivateKey_Plain</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="keyword">extern</span> <span class="keyword">const</span> <a class="code hl_typedef" href="a01064.html#ga3f48e0c0ea0cdad730d07929b3a9ac47">mcuxClKey_EncodingDescriptor_t</a> mcuxClEcc_EncodingDescriptor_MontDH_PublicKey_Plain;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="preprocessor">#define mcuxClEcc_Encoding_MontDH_PublicKey_Plain &amp;mcuxClEcc_EncodingDescriptor_MontDH_PublicKey_Plain</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="preprocessor">#endif </span><span class="comment">/* MCUXCL_FEATURE_ECC_MONTDH */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment">/**********************************************************/</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment">/* EdDSA key encoding                                    */</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment">/**********************************************************/</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="keyword">extern</span> <span class="keyword">const</span> <a class="code hl_typedef" href="a01064.html#ga3f48e0c0ea0cdad730d07929b3a9ac47">mcuxClKey_EncodingDescriptor_t</a> <a class="code hl_variable" href="a00521.html#a4dbd001e356d11814e77f274acd45734">mcuxClEcc_EncodingDescriptor_EdDSA_PrivateKey_Plain</a>;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="a00521.html#a5733b2352173c5a0d113962db5b6b65b">  107</a></span><span class="preprocessor">#define mcuxClEcc_Encoding_EdDSA_PrivateKey_Plain &amp;mcuxClEcc_EncodingDescriptor_EdDSA_PrivateKey_Plain</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="keyword">extern</span> <span class="keyword">const</span> <a class="code hl_typedef" href="a01064.html#ga3f48e0c0ea0cdad730d07929b3a9ac47">mcuxClKey_EncodingDescriptor_t</a> <a class="code hl_variable" href="a00521.html#a22e345562245711e8e94e5fa8eed5642">mcuxClEcc_EncodingDescriptor_EdDSA_PublicKey_Plain</a>;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="a00521.html#a71506d15195b1eb2e58020b2ec4891c6">  116</a></span><span class="preprocessor">#define mcuxClEcc_Encoding_EdDSA_PublicKey_Plain &amp;mcuxClEcc_EncodingDescriptor_EdDSA_PublicKey_Plain</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>MCUX_CSSL_ANALYSIS_STOP_SUPPRESS_DECLARED_BUT_NEVER_REFERENCED()</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>} <span class="comment">/* extern &quot;C&quot; */</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="preprocessor">#endif </span><span class="comment">/* MCUXCLECC_KEYENCODINGMECHANISMS_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aa00521_html_a04f6a2f26c6d8c524f38e6d6cbd8d590"><div class="ttname"><a href="a00521.html#a04f6a2f26c6d8c524f38e6d6cbd8d590">mcuxClEcc_EncodingDescriptor_WeierECC_PublicKey_Plain</a></div><div class="ttdeci">const mcuxClKey_EncodingDescriptor_t mcuxClEcc_EncodingDescriptor_WeierECC_PublicKey_Plain</div><div class="ttdoc">Key encoding descriptor for a WeierECC public key.</div></div>
 <div class="ttc" id="aa00521_html_a22e345562245711e8e94e5fa8eed5642"><div class="ttname"><a href="a00521.html#a22e345562245711e8e94e5fa8eed5642">mcuxClEcc_EncodingDescriptor_EdDSA_PublicKey_Plain</a></div><div class="ttdeci">const mcuxClKey_EncodingDescriptor_t mcuxClEcc_EncodingDescriptor_EdDSA_PublicKey_Plain</div><div class="ttdoc">Key encoding descriptor for a EdDSA public key.</div></div>
 <div class="ttc" id="aa00521_html_a4dbd001e356d11814e77f274acd45734"><div class="ttname"><a href="a00521.html#a4dbd001e356d11814e77f274acd45734">mcuxClEcc_EncodingDescriptor_EdDSA_PrivateKey_Plain</a></div><div class="ttdeci">const mcuxClKey_EncodingDescriptor_t mcuxClEcc_EncodingDescriptor_EdDSA_PrivateKey_Plain</div><div class="ttdoc">Key encoding descriptor for a EdDSA private key.</div></div>
 <div class="ttc" id="aa00521_html_ac818d4e126f2a1ea88dcaa2302214bd9"><div class="ttname"><a href="a00521.html#ac818d4e126f2a1ea88dcaa2302214bd9">mcuxClEcc_EncodingDescriptor_WeierECC_PrivateKey_Plain</a></div><div class="ttdeci">const mcuxClKey_EncodingDescriptor_t mcuxClEcc_EncodingDescriptor_WeierECC_PrivateKey_Plain</div><div class="ttdoc">Key encoding descriptor for a WeierECC private key.</div></div>
 <div class="ttc" id="aa00620_html"><div class="ttname"><a href="a00620.html">mcuxClKey_Types.h</a></div><div class="ttdoc">Type definitions for the mcuxClKey component.</div></div>
-<div class="ttc" id="aa01064_html_ga3f48e0c0ea0cdad730d07929b3a9ac47"><div class="ttname"><a href="a01064.html#ga3f48e0c0ea0cdad730d07929b3a9ac47">mcuxClKey_EncodingDescriptor_t</a></div><div class="ttdeci">struct mcuxClKey_EncodingDescriptor mcuxClKey_EncodingDescriptor_t</div><div class="ttdoc">Key encoding mechanism descriptor type.</div><div class="ttdef"><b>Definition</b> mcuxClKey_Types.h:137</div></div>
+<div class="ttc" id="aa01064_html_ga3f48e0c0ea0cdad730d07929b3a9ac47"><div class="ttname"><a href="a01064.html#ga3f48e0c0ea0cdad730d07929b3a9ac47">mcuxClKey_EncodingDescriptor_t</a></div><div class="ttdeci">struct mcuxClKey_EncodingDescriptor mcuxClKey_EncodingDescriptor_t</div><div class="ttdoc">Key encoding mechanism descriptor type.</div><div class="ttdef"><b>Definition</b> mcuxClKey_Types.h:157</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->
