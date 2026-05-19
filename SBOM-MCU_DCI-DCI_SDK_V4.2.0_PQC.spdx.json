@@ -8,7 +8,7 @@
     ],
     "licenseListVersion": "3.26"
   },
-  "name": "MCU_DCI-DCI_SDK_V4.2.0_PQC",
+  "name": "sgi_pkc_pqc",
   "dataLicense": "CC0-1.0",
   "hasExtractedLicensingInfos": [
     {
@@ -21,12 +21,12 @@
   "packages": [
     {
       "SPDXID": "SPDXRef-package-34ea511b-7201-47fb-9059-a92afcb267c5",
-      "name": "MCU_DCI",
-      "versionInfo": "DCI_SDK_V4.2.0_PQC",
+      "name": "sgi_pkc_pqc",
+      "versionInfo": "V4.2.0",
       "licenseConcluded": "(LicenseRef-babf777f-042b-42df-a5bf-638993427038)",
       "licenseDeclared": "(LicenseRef-babf777f-042b-42df-a5bf-638993427038)",
-      "downloadLocation": "NOASSERTION",
-      "originator": "Organization: MCU_DCI",
+      "downloadLocation": "https://github.com/nxp-mcuxpresso/sgi_pkc_pqc",
+      "originator": "NXP",
       "supplier": "NOASSERTION",
       "externalRefs": [],
       "filesAnalyzed": false
