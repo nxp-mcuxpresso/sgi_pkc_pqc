@@ -6,6 +6,23 @@
 ########################
 #    Documentation     #
 ########################
+if (CONFIG_MCUX_COMPONENT_component.sgi_pkc_pqc.doc.mcxa2xx)
+    mcux_add_source(
+        SOURCES
+                doc/mcxa2xx/html/*.*
+                doc/mcxa2xx/html/search/*.*
+                LICENSE.md
+                ReleaseNotes_PQC.txt
+                SBOM-MCU_DCI2-DCI_SDK_V4.3.0_PQC.spdx.json
+                BASE_PATH ${SdkRootDirPath}/components/sgi_pkc/pqc/
+    )
+
+    mcux_add_include(
+        INCLUDES ./
+        BASE_PATH ${SdkRootDirPath}/components/sgi_pkc/pqc/
+    )
+endif()
+
 if (CONFIG_MCUX_COMPONENT_component.sgi_pkc_pqc.doc.mcxa5xx)
     mcux_add_source(
         SOURCES
@@ -13,7 +30,24 @@ if (CONFIG_MCUX_COMPONENT_component.sgi_pkc_pqc.doc.mcxa5xx)
                 doc/mcxa5xx/html/search/*.*
                 LICENSE.md
                 ReleaseNotes_PQC.txt
-                SBOM-MCU_DCI-DCI_SDK_V4.2.1_PQC.spdx.json
+                SBOM-MCU_DCI2-DCI_SDK_V4.3.0_PQC.spdx.json
+                BASE_PATH ${SdkRootDirPath}/components/sgi_pkc/pqc/
+    )
+
+    mcux_add_include(
+        INCLUDES ./
+        BASE_PATH ${SdkRootDirPath}/components/sgi_pkc/pqc/
+    )
+endif()
+
+if (CONFIG_MCUX_COMPONENT_component.sgi_pkc_pqc.doc.mcxl2xx)
+    mcux_add_source(
+        SOURCES
+                doc/mcxl2xx/html/*.*
+                doc/mcxl2xx/html/search/*.*
+                LICENSE.md
+                ReleaseNotes_PQC.txt
+                SBOM-MCU_DCI2-DCI_SDK_V4.3.0_PQC.spdx.json
                 BASE_PATH ${SdkRootDirPath}/components/sgi_pkc/pqc/
     )
 
@@ -30,7 +64,7 @@ if (CONFIG_MCUX_COMPONENT_component.sgi_pkc_pqc.doc.mcxw7x)
                 doc/mcxw7x/html/search/*.*
                 LICENSE.md
                 ReleaseNotes_PQC.txt
-                SBOM-MCU_DCI-DCI_SDK_V4.2.1_PQC.spdx.json
+                SBOM-MCU_DCI2-DCI_SDK_V4.3.0_PQC.spdx.json
                 BASE_PATH ${SdkRootDirPath}/components/sgi_pkc/pqc/
     )
 
@@ -43,6 +77,20 @@ endif()
 ########################
 #    Platform specific #
 ########################
+
+if (CONFIG_MCUX_COMPONENT_component.sgi_pkc_pqc.platform_pqc.mcxa2xx)
+    mcux_add_source(
+        SOURCES includes/platform/mcxa2xx/mcuxClMlDsa_MemoryConsumption.h
+                includes/platform/mcxa2xx/mcuxClMlKem_MemoryConsumption.h
+
+                BASE_PATH ${SdkRootDirPath}/components/sgi_pkc/pqc/
+    )
+    mcux_add_include(
+        INCLUDES ./
+                 includes/platform/mcxa2xx
+                 BASE_PATH ${SdkRootDirPath}/components/sgi_pkc/pqc/
+    )
+endif()
 
 if (CONFIG_MCUX_COMPONENT_component.sgi_pkc_pqc.platform_pqc.mcxa5xx)
     mcux_add_source(
@@ -58,6 +106,20 @@ if (CONFIG_MCUX_COMPONENT_component.sgi_pkc_pqc.platform_pqc.mcxa5xx)
     )
 endif()
 
+if (CONFIG_MCUX_COMPONENT_component.sgi_pkc_pqc.platform_pqc.mcxl2xx)
+    mcux_add_source(
+        SOURCES includes/platform/mcxl2xx/mcuxClMlDsa_MemoryConsumption.h
+                includes/platform/mcxl2xx/mcuxClMlKem_MemoryConsumption.h
+
+                BASE_PATH ${SdkRootDirPath}/components/sgi_pkc/pqc/
+    )
+    mcux_add_include(
+        INCLUDES ./
+                 includes/platform/mcxl2xx
+                 BASE_PATH ${SdkRootDirPath}/components/sgi_pkc/pqc/
+    )
+endif()
+
 if (CONFIG_MCUX_COMPONENT_component.sgi_pkc_pqc.platform_pqc.mcxw7x)
     mcux_add_source(
         SOURCES includes/platform/mcxw7x/mcuxClMlDsa_MemoryConsumption.h
@@ -69,36 +131,6 @@ if (CONFIG_MCUX_COMPONENT_component.sgi_pkc_pqc.platform_pqc.mcxw7x)
         INCLUDES ./
                  includes/platform/mcxw7x
                  BASE_PATH ${SdkRootDirPath}/components/sgi_pkc/pqc/
-    )
-endif()
-
-########################
-#    Static lib        #
-########################
-
-if (CONFIG_MCUX_COMPONENT_component.sgi_pkc_pqc.static_lib.mcxa5xx)
-    mcux_add_source(
-        SOURCES static_library/mcxa5xx/libclns_pqc.a
-                static_library/mcxa5xx/libclns_pqc.a.libsize
-                static_library/mcxa5xx/libclns_pqc.a.objsize
-                BASE_PATH ${SdkRootDirPath}/components/sgi_pkc/pqc/
-    )
-    mcux_add_include(
-        INCLUDES ./
-        BASE_PATH ${SdkRootDirPath}/components/sgi_pkc/pqc/
-    )
-endif()
-
-if (CONFIG_MCUX_COMPONENT_component.sgi_pkc_pqc.static_lib.mcxw7x)
-    mcux_add_source(
-        SOURCES static_library/mcxw7x/libclns_pqc.a
-                static_library/mcxw7x/libclns_pqc.a.libsize
-                static_library/mcxw7x/libclns_pqc.a.objsize
-                BASE_PATH ${SdkRootDirPath}/components/sgi_pkc/pqc/
-    )
-    mcux_add_include(
-        INCLUDES ./
-        BASE_PATH ${SdkRootDirPath}/components/sgi_pkc/pqc/
     )
 endif()
 

@@ -16,9 +16,17 @@ config MCUX_COMPONENT_component.sgi_pkc_pqc
 	  choice
 	    prompt "Target device family - Platform Support"
 
+		config MCUX_COMPONENT_component.sgi_pkc_pqc.platform_pqc.mcxa2xx
+            bool "MCXA"
+			depends on is_device.MCXA
+
 		config MCUX_COMPONENT_component.sgi_pkc_pqc.platform_pqc.mcxa5xx
             bool "MCXA5"
 			depends on is_device.MCXA5XX
+
+		config MCUX_COMPONENT_component.sgi_pkc_pqc.platform_pqc.mcxl2xx
+            bool "MCXL"
+			depends on is_device.MCXL
 
 		config MCUX_COMPONENT_component.sgi_pkc_pqc.platform_pqc.mcxw7x
             bool "MCXW"
@@ -28,23 +36,19 @@ config MCUX_COMPONENT_component.sgi_pkc_pqc
 
     menu "Documentation"
 
+        config MCUX_COMPONENT_component.sgi_pkc_pqc.doc.mcxa2xx
+            bool "MCXA2"
+			depends on is_device.MCXA
+
         config MCUX_COMPONENT_component.sgi_pkc_pqc.doc.mcxa5xx
             bool "MCXA5"
 			depends on is_device.MCXA5XX
 
+        config MCUX_COMPONENT_component.sgi_pkc_pqc.doc.mcxl2xx
+            bool "MCXL"
+			depends on is_device.MCXL
+
 		config MCUX_COMPONENT_component.sgi_pkc_pqc.doc.mcxw7x
-            bool "MCXW"
-			depends on is_device.MCXW7X
-	  
-    endmenu
-
-    menu "Static Libraries"
-
-        config MCUX_COMPONENT_component.sgi_pkc_pqc.static_lib.mcxa5xx
-            bool "MCXA5"
-			depends on is_device.MCXA5XX
-		
-		config MCUX_COMPONENT_component.sgi_pkc_pqc.static_lib.mcxw7x
             bool "MCXW"
 			depends on is_device.MCXW7X
 	  
