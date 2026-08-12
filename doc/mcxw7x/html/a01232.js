@@ -1,6 +1,0 @@
-var a01232 =
-[
-    [ "MCUXCLECC_WACPU_", "a01255.html", "a01255" ],
-    [ "MCUXCLECC_WAPKC_", "a01256.html", "a01256" ],
-    [ "MCUXCLECC_CUSTOMWEIERECCDOMAINPARAMS_SIZE", "a01232.html#gac8895d8165cf3c84b10ac986a30c37e4", null ]
-];

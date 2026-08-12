@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['_5f_5fattribute_5f_5f_0',['__attribute__',['../a01280.html',1,'']]]
+  ['clns_0',['User Manual of Crypto Library Normal Secure (CLNS)',['../index.html',1,'']]],
+  ['crypto_20library_20normal_20secure_20clns_1',['User Manual of Crypto Library Normal Secure (CLNS)',['../index.html',1,'']]]
 ];

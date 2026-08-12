@@ -1,9 +1,21 @@
 var searchData=
 [
-  ['access_0',['access',['../a01218.html',1,'Secure counter direct access'],['../a01224.html',1,'Secure counter direct access'],['../a01229.html',1,'Secure counter direct access']]],
-  ['and_20option_20to_20request_20hw_20resource_1',['mcuxClResource status of HW resource and option to request HW resource',['../a01116.html',1,'']]],
-  ['api_2',['API',['../a01154.html',1,'Data Integrity API'],['../a01167.html',1,'Flow Protection API'],['../a01153.html',1,'MCUX CSSL &amp;ndash; API'],['../a01210.html',1,'Parameter Integrity API'],['../a01214.html',1,'Secure Counter API']]],
-  ['apis_20to_20construct_20hmac_20modes_3',['APIs to construct HMAC modes',['../a01042.html',1,'']]],
-  ['apis_20to_20construct_20mac_20modes_4',['APIs to construct Mac modes',['../a01074.html',1,'']]],
-  ['assembly_20implementation_5',['Data Integrity: Assembly implementation',['../a01158.html',1,'']]]
+  ['mcuxclkem_0',['mcuxClKem',['../a00116.html',1,'']]],
+  ['mcuxclkem_5fconstants_1',['mcuxClKem_Constants',['../a00117.html',1,'']]],
+  ['mcuxclkem_5ffunctions_2',['mcuxClKem_Functions',['../a00118.html',1,'']]],
+  ['mcuxclkem_5ftypes_3',['mcuxClKem_Types',['../a00119.html',1,'']]],
+  ['mcuxclmldsa_4',['mcuxClMlDsa',['../a00120.html',1,'']]],
+  ['mcuxclmldsa_5fconstants_5',['mcuxClMlDsa_Constants',['../a00121.html',1,'']]],
+  ['mcuxclmldsa_5fconstants_5fmodes_6',['McuxClMlDsa_Constants_Modes',['../a00122.html',1,'']]],
+  ['mcuxclmldsa_5fkeyencoding_7',['mcuxClMlDsa_KeyEncoding',['../a00123.html',1,'']]],
+  ['mcuxclmldsa_5fkeytypes_8',['mcuxClMlDsa_KeyTypes',['../a00124.html',1,'']]],
+  ['mcuxclmldsa_5fmemoryconsumption_9',['mcuxClMlDsa_MemoryConsumption',['../a00132.html',1,'']]],
+  ['mcuxclmldsa_5fmodeconstructor_10',['mcuxClMlDsa_ModeConstructor',['../a00125.html',1,'']]],
+  ['mcuxclmldsa_5ftypes_11',['mcuxClMlDsa_Types',['../a00126.html',1,'']]],
+  ['mcuxclmlkem_12',['mcuxClMlKem',['../a00127.html',1,'']]],
+  ['mcuxclmlkem_5fconstants_13',['mcuxClMlKem_Constants',['../a00128.html',1,'']]],
+  ['mcuxclmlkem_5fkeyencoding_14',['mcuxClMlKem_KeyEncoding',['../a00129.html',1,'']]],
+  ['mcuxclmlkem_5fkeytypes_15',['mcuxClMlKem_KeyTypes',['../a00130.html',1,'']]],
+  ['mcuxclmlkem_5fmemoryconsumption_16',['mcuxClMlKem_MemoryConsumption',['../a00133.html',1,'']]],
+  ['mcuxclmlkem_5ftypes_17',['mcuxClMlKem_Types',['../a00131.html',1,'']]]
 ];

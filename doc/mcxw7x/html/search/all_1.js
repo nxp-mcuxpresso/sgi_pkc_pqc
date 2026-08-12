@@ -1,10 +1,6 @@
 var searchData=
 [
-  ['access_0',['access',['../a01218.html',1,'Secure counter direct access'],['../a01224.html',1,'Secure counter direct access'],['../a01229.html',1,'Secure counter direct access']]],
-  ['and_20option_20to_20request_20hw_20resource_1',['mcuxClResource status of HW resource and option to request HW resource',['../a01116.html',1,'']]],
-  ['api_2',['API',['../a01154.html',1,'Data Integrity API'],['../a01167.html',1,'Flow Protection API'],['../a01153.html',1,'MCUX CSSL &amp;ndash; API'],['../a01210.html',1,'Parameter Integrity API'],['../a01214.html',1,'Secure Counter API']]],
-  ['apicall_3',['apiCall',['../a01296.html#ac2a846545594709d93735fec72e6993d',1,'mcuxClSession_Descriptor']]],
-  ['apis_20to_20construct_20hmac_20modes_4',['APIs to construct HMAC modes',['../a01042.html',1,'']]],
-  ['apis_20to_20construct_20mac_20modes_5',['APIs to construct Mac modes',['../a01074.html',1,'']]],
-  ['assembly_20implementation_6',['Data Integrity: Assembly implementation',['../a01158.html',1,'']]]
+  ['general_20user_20security_20guidance_0',['General User Security Guidance',['../a00153.html',1,'General User Security Guidance'],['../index.html#SDK_SecurityGuidanceManual',1,'General User Security Guidance']]],
+  ['guidance_1',['Guidance',['../a00153.html',1,'General User Security Guidance'],['../index.html#SDK_SecurityGuidanceManual',1,'General User Security Guidance']]],
+  ['guidance_20manual_2',['Guidance Manual',['../a00152.html',1,'User Guidance Manual'],['../index.html#Main_UserGuidanceManual',1,'User Guidance Manual']]]
 ];
