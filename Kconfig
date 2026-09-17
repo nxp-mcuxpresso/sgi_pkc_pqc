@@ -18,19 +18,19 @@ config MCUX_COMPONENT_component.sgi_pkc_pqc
 
 		config MCUX_COMPONENT_component.sgi_pkc_pqc.platform_pqc.mcxa2xx
             bool "MCXA"
-			depends on is_device.MCXA
+			depends on MCUX_DEPENDENCY_COMPONENT_component.sgi_pkc.is_device.MCXA
 
 		config MCUX_COMPONENT_component.sgi_pkc_pqc.platform_pqc.mcxa5xx
             bool "MCXA5"
-			depends on is_device.MCXA5XX
+			depends on MCUX_DEPENDENCY_COMPONENT_component.sgi_pkc.is_device.MCXA5XX
 
 		config MCUX_COMPONENT_component.sgi_pkc_pqc.platform_pqc.mcxl2xx
             bool "MCXL"
-			depends on is_device.MCXL
+			depends on MCUX_DEPENDENCY_COMPONENT_component.sgi_pkc.is_device.MCXL
 
 		config MCUX_COMPONENT_component.sgi_pkc_pqc.platform_pqc.mcxw7x
             bool "MCXW"
-			depends on is_device.MCXW7X
+			depends on MCUX_DEPENDENCY_COMPONENT_component.sgi_pkc.is_device.MCXW7X
 	  endchoice
 	endif
 
@@ -38,19 +38,19 @@ config MCUX_COMPONENT_component.sgi_pkc_pqc
 
         config MCUX_COMPONENT_component.sgi_pkc_pqc.doc.mcxa2xx
             bool "MCXA2"
-			depends on is_device.MCXA
+			depends on MCUX_DEPENDENCY_COMPONENT_component.sgi_pkc.is_device.MCXA
 
         config MCUX_COMPONENT_component.sgi_pkc_pqc.doc.mcxa5xx
             bool "MCXA5"
-			depends on is_device.MCXA5XX
+			depends on MCUX_DEPENDENCY_COMPONENT_component.sgi_pkc.is_device.MCXA5XX
 
         config MCUX_COMPONENT_component.sgi_pkc_pqc.doc.mcxl2xx
             bool "MCXL"
-			depends on is_device.MCXL
+			depends on MCUX_DEPENDENCY_COMPONENT_component.sgi_pkc.is_device.MCXL
 
 		config MCUX_COMPONENT_component.sgi_pkc_pqc.doc.mcxw7x
             bool "MCXW"
-			depends on is_device.MCXW7X
+			depends on MCUX_DEPENDENCY_COMPONENT_component.sgi_pkc.is_device.MCXW7X
 	  
     endmenu
 
